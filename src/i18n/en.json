@@ -1,21 +1,92 @@
 {
   "navbar": {
     "home": "Home",
-    "features": "Features",
+    "benefits": "Benefits",
+    "how": "How it works",
+    "features": "IoT",
+    "ai": "Botanic AI",
     "pricing": "Pricing",
+    "faq": "FAQ",
+    "team": "Team",
     "about": "About Us",
     "access": "Access"
   },
   "hero": {
-    "title": "Your plant, perfectly cared for, without complications",
-    "subtitle": "Monitor health, receive notifications, and access personalized guides. PlantSync combines IoT and AI for your digital greenhouse.",
-    "cta": "Try AI Bot"
+    "title": "Your plant, perfectly cared for, <span class='text-primary'>without complications</span>",
+    "subtitle": "Monitor health, receive notifications, and access personalized guides without being an expert. PlantSync combines IoT and artificial intelligence to create your digital greenhouse.",
+    "cta_start": "Get started →",
+    "cta_how": "See how it works"
+  },
+  "benefits": {
+    "badge": "Natural wellness",
+    "title": "More than caring for plants, <span class='text-primary'>caring for you</span>",
+    "subtitle": "Connect with nature from home and build routines that transform your daily wellness.",
+    "card1": {
+      "title": "Reduce stress",
+      "desc": "Plants improve your mood. We help you care for them without worries."
+    },
+    "card2": {
+      "title": "Build healthy routines",
+      "desc": "Gentle reminders that adapt to your life, not the other way around."
+    }
+  },
+  "how": {
+    "badge": "Simple and powerful",
+    "title": "Three steps to your <span class='text-primary'>smart garden</span>",
+    "step1": {
+      "title": "01. Register your plant",
+      "desc": "Take a photo or enter data manually. We identify the species and create a profile."
+    },
+    "step2": {
+      "title": "02. Connect and automate",
+      "desc": "Link IoT sensors to monitor humidity and light in real time."
+    },
+    "step3": {
+      "title": "03. Receive smart guidance",
+      "desc": "Our AI assistant analyzes data to give you personalized recommendations."
+    }
+  },
+  "iot": {
+    "title": "Your monitoring ecosystem"
   },
   "ai": {
     "title": "Your personal botanical assistant",
     "subtitle": "Interact in real-time with our AI. Learn from your plant sensors for precise advice.",
+    "card1": "Smart Chat",
     "chatExample": {
       "placeholder": "e.g., Why does my monstera have yellow leaves?"
     }
+  },
+  "pricing": {
+    "title": "Plans for every gardener",
+    "basic": {
+      "title": "Basic",
+      "btn": "Get started"
+    }
+  },
+  "faq": {
+    "title": "We answer your questions",
+    "q1": {
+      "question": "Do I need IoT sensors to use PlantSync?",
+      "answer": "Yes, although you can use the app manually..."
+    }
+  },
+  "team": {
+    "title": "The minds behind PlantSync",
+    "role1": "Role"
+  },
+  "cta": {
+    "title": "Start caring for your plants <span class='text-secondary'>smartly</span>",
+    "subtitle": "Join thousands of people who have already transformed their relationship with plants.",
+    "btn1": "Start now for free →",
+    "btn2": "Watch demo"
+  },
+  "footer": {
+    "product": {
+      "title": "Product",
+      "link1": "Features",
+      "link2": "Pricing"
+    },
+    "copyright": "© 2025 BioPafi. All rights reserved."
   }
 }

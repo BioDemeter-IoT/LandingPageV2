@@ -7,11 +7,13 @@ export function initNavbar() {
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 20) {
-            header.classList.add('glass', 'shadow-lg', 'shadow-primary/5');
-            header.classList.remove('bg-transparent');
+            header.classList.add('shadow-lg');
+            header.classList.remove('bg-background/80');
+            header.classList.add('bg-background/95');
         } else {
-            header.classList.remove('glass', 'shadow-lg', 'shadow-primary/5');
-            header.classList.add('bg-transparent');
+            header.classList.remove('shadow-lg');
+            header.classList.add('bg-background/80');
+            header.classList.remove('bg-background/95');
         }
     });
 
