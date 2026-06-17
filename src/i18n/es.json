@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "features": "Características",
+    "pricing": "Precios",
+    "about": "Nosotros",
+    "access": "Acceder"
+  },
+  "hero": {
+    "title": "Tu planta siempre bien cuidada, sin complicaciones",
+    "subtitle": "Monitorea su estado, recibe notificaciones y accede a guías personalizadas. PlantSync combina IoT e IA para tu invernadero digital.",
+    "cta": "Probar Bot IA"
+  },
+  "ai": {
+    "title": "Tu asistente botánico personal",
+    "subtitle": "Interactúa en tiempo real con nuestra IA. Aprende de los sensores de tu planta para obtener consejos precisos.",
+    "chatExample": {
+      "placeholder": "Ej: ¿Por qué mi monstera tiene hojas amarillas?"
+    }
+  }
+}

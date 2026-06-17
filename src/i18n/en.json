@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "about": "About Us",
+    "access": "Access"
+  },
+  "hero": {
+    "title": "Your plant, perfectly cared for, without complications",
+    "subtitle": "Monitor health, receive notifications, and access personalized guides. PlantSync combines IoT and AI for your digital greenhouse.",
+    "cta": "Try AI Bot"
+  },
+  "ai": {
+    "title": "Your personal botanical assistant",
+    "subtitle": "Interact in real-time with our AI. Learn from your plant sensors for precise advice.",
+    "chatExample": {
+      "placeholder": "e.g., Why does my monstera have yellow leaves?"
+    }
+  }
+}
