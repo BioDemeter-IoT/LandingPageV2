@@ -47,33 +47,128 @@
     }
   },
   "iot": {
-    "title": "Your monitoring ecosystem"
+    "title": "Your real-time monitoring ecosystem",
+    "s1": {
+      "title": "Soil Moisture",
+      "desc": "Capacitive sensors that accurately measure the water level available to the roots."
+    },
+    "s2": {
+      "title": "Temperature",
+      "desc": "Constant monitoring to detect sudden changes that may affect your plants."
+    },
+    "s3": {
+      "title": "Light (Lux)",
+      "desc": "Measures light intensity and alerts you if they need more sun exposure."
+    },
+    "s4": {
+      "title": "Actuators",
+      "desc": "Control water pumps and artificial lamps completely remotely."
+    }
   },
   "ai": {
-    "title": "Your personal botanical assistant",
-    "subtitle": "Interact in real-time with our AI. Learn from your plant sensors for precise advice.",
-    "card1": "Smart Chat",
-    "chatExample": {
-      "placeholder": "e.g., Why does my monstera have yellow leaves?"
+    "badge": "Botanical Intelligence",
+    "title": "A 24/7 expert for your plants",
+    "subtitle": "Our AI analyzes sensor data and the environment to offer accurate diagnoses and proactive advice before your plant needs it.",
+    "feature1": {
+      "title": "Early Diagnosis",
+      "desc": "Instantly detects anomalies in humidity or temperature, preventing common diseases."
+    },
+    "feature2": {
+      "title": "Personalized Guidance",
+      "desc": "Receive care instructions specifically tailored to your plant species and its growth stage."
+    },
+    "feature3": {
+      "title": "Continuous Learning",
+      "desc": "The system evolves and becomes smarter using the historical data from your own greenhouse."
     }
   },
   "pricing": {
-    "title": "Plans for every gardener",
+    "badge": "Choose your plan",
+    "title": "Plans for every <span class='text-[#ea580c]'>gardener</span>",
+    "subtitle": "From beginners to experts, we have the perfect plan for you.",
     "basic": {
       "title": "Basic",
+      "subtitle": "Perfect to get started",
+      "f1": "Register up to 5 plants",
+      "f2": "Care reminders",
+      "f3": "Assisted manual monitoring",
+      "f4": "Basic care guides",
       "btn": "Get started"
+    },
+    "premium": {
+      "badge": "Most popular",
+      "title": "Premium",
+      "subtitle": "For enthusiasts",
+      "f1": "Everything in Basic",
+      "f2": "Unlimited plants",
+      "f3": "Visual task calendar",
+      "f4": "Complete care history",
+      "f5": "Advanced guides",
+      "btn": "Choose Premium"
+    },
+    "pro": {
+      "title": "Pro",
+      "subtitle": "Complete experience",
+      "f1": "Everything in Premium",
+      "f2": "Full IoT integration",
+      "f3": "Unlimited AI assistant",
+      "f4": "Photo identification",
+      "f5": "Weather-based recommendations",
+      "f6": "Priority support",
+      "btn": "Go to Pro"
     }
   },
   "faq": {
     "title": "We answer your questions",
     "q1": {
       "question": "Do I need IoT sensors to use PlantSync?",
-      "answer": "Yes, although you can use the app manually..."
+      "answer": "It is not strictly necessary. You can use the app manually to keep a visual record and receive guides, although sensors automate and improve care accuracy."
+    },
+    "q2": {
+      "question": "What types of plants can I register?",
+      "answer": "Our database includes thousands of species, from common indoor plants like Monstera or Pothos, to urban gardens and exotic succulents."
+    },
+    "q3": {
+      "question": "How does Botanical AI work?",
+      "answer": "The AI analyzes input data (humidity, temperature, species) and cross-references it with botanical information to generate early alerts and personalized recommendations."
+    },
+    "q4": {
+      "question": "Is it compatible with any mobile device?",
+      "answer": "Yes, PlantSync works seamlessly on iOS, Android browsers, tablets, and desktop computers, adapting to your screen."
     }
   },
   "team": {
-    "title": "The minds behind PlantSync",
-    "role1": "Role"
+    "badge": "Meet the team",
+    "title": "The minds behind <span class='text-primary'>PlantSync</span>",
+    "subtitle": "A team passionate about technology and environmental care.",
+    "m1": {
+      "role": "Full Stack Developer",
+      "desc": "Frontend, Backend, Databases, Open Source"
+    },
+    "m2": {
+      "role": "Product Developer",
+      "desc": "Frontend, Backend, Databases, Digital products"
+    },
+    "m3": {
+      "role": "Web Developer",
+      "desc": "C++, Python, HTML, Web development"
+    },
+    "m4": {
+      "role": "Software Developer",
+      "desc": "C++, HTML, CSS, .NET, Python, JavaScript, SQL, MongoDB"
+    },
+    "m5": {
+      "role": "Frontend Developer",
+      "desc": "JavaScript, C++, UI Development"
+    },
+    "m6": {
+      "role": "AI/ML Engineer",
+      "desc": "Python, AWS, Data Engineering, Chatbots, Speech Analytics"
+    },
+    "m7": {
+      "role": "Business Analyst",
+      "desc": "Analysis, Empathy, Management, Collaboration"
+    }
   },
   "cta": {
     "title": "Start caring for your plants <span class='text-secondary'>smartly</span>",

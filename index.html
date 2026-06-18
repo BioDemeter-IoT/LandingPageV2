@@ -10,7 +10,7 @@
     <header id="main-header" class="fixed w-full z-50 transition-all duration-300 border-b border-border/40 bg-background/80 backdrop-blur-md">
         <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <img src="/placeholder-logo.svg" alt="Logo" class="h-8 w-8">
+                <img src="/logo-plantsync.png" alt="Logo" class="h-8 w-8">
                 <span class="text-xl font-bold tracking-tight">PlantSync</span>
             </div>
             
@@ -58,15 +58,21 @@
                         <span class="w-2 h-2 rounded-full bg-primary mr-2"></span>
                         by BioPafi
                     </span>
-                    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-foreground" data-i18n="hero.title"></h1>
+                    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-foreground">
+                        <span data-i18n="hero.title"></span> 
+                        <i data-lucide="leaf" class="inline-block w-10 h-10 md:w-12 md:h-12 text-primary ml-2 mb-2"></i>
+                    </h1>
                     <p class="text-lg text-muted-foreground leading-relaxed" data-i18n="hero.subtitle"></p>
-                    <div class="flex gap-4">
+                    <div class="flex flex-col sm:flex-row gap-4">
                         <button class="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity" data-i18n="hero.cta_start"></button>
-                        <button class="bg-secondary px-8 py-4 rounded-xl font-semibold hover:bg-secondary/80 transition-colors" data-i18n="hero.cta_how"></button>
+                        <a href="#como-funciona" class="inline-flex items-center justify-center bg-secondary px-8 py-4 rounded-xl font-semibold hover:bg-secondary/80 transition-colors" data-i18n="hero.cta_how"></a>
                     </div>
                 </div>
-                <div class="relative flex justify-center">
-                    <div class="w-full max-w-md h-[400px] bg-gradient-organic rounded-full border border-border animate-float"></div>
+                <div class="relative flex justify-center items-center">
+                    <div class="w-full max-w-md h-[400px] bg-gradient-organic rounded-full border border-border animate-float flex items-center justify-center relative overflow-hidden shadow-xl">
+                        <i data-lucide="leaf" class="w-48 h-48 text-primary/20 absolute"></i>
+                        <img src="/hoja-digital.png" alt="Hoja Digital" class="w-3/4 h-3/4 object-contain z-10" onerror="this.style.display='none'">
+                    </div>
                 </div>
             </div>
         </section>
@@ -131,12 +137,33 @@
             <div class="max-w-3xl mx-auto px-6">
                 <h2 class="text-4xl font-bold text-center mb-12" data-i18n="faq.title"></h2>
                 <div id="accordion-container" class="space-y-4">
-                    <div class="accordion-item border rounded-xl p-4">
-                        <button class="flex justify-between w-full font-bold">
+                    <div class="accordion-item border border-border bg-background rounded-xl p-4 shadow-sm">
+                        <button class="flex justify-between items-center w-full font-bold text-left">
                             <span data-i18n="faq.q1.question"></span>
-                            <i data-lucide="chevron-down"></i>
+                            <i data-lucide="chevron-down" class="shrink-0 ml-4 text-primary"></i>
                         </button>
-                        <div class="hidden pt-4 text-muted-foreground" data-i18n="faq.q1.answer"></div>
+                        <div class="hidden pt-4 text-muted-foreground leading-relaxed" data-i18n="faq.q1.answer"></div>
+                    </div>
+                    <div class="accordion-item border border-border bg-background rounded-xl p-4 shadow-sm">
+                        <button class="flex justify-between items-center w-full font-bold text-left">
+                            <span data-i18n="faq.q2.question"></span>
+                            <i data-lucide="chevron-down" class="shrink-0 ml-4 text-primary"></i>
+                        </button>
+                        <div class="hidden pt-4 text-muted-foreground leading-relaxed" data-i18n="faq.q2.answer"></div>
+                    </div>
+                    <div class="accordion-item border border-border bg-background rounded-xl p-4 shadow-sm">
+                        <button class="flex justify-between items-center w-full font-bold text-left">
+                            <span data-i18n="faq.q3.question"></span>
+                            <i data-lucide="chevron-down" class="shrink-0 ml-4 text-primary"></i>
+                        </button>
+                        <div class="hidden pt-4 text-muted-foreground leading-relaxed" data-i18n="faq.q3.answer"></div>
+                    </div>
+                    <div class="accordion-item border border-border bg-background rounded-xl p-4 shadow-sm">
+                        <button class="flex justify-between items-center w-full font-bold text-left">
+                            <span data-i18n="faq.q4.question"></span>
+                            <i data-lucide="chevron-down" class="shrink-0 ml-4 text-primary"></i>
+                        </button>
+                        <div class="hidden pt-4 text-muted-foreground leading-relaxed" data-i18n="faq.q4.answer"></div>
                     </div>
                 </div>
             </div>
@@ -144,57 +171,235 @@
 
         <section id="iot" class="py-20 bg-background">
             <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center mb-12" data-i18n="iot.title"></h2>
-                <div class="grid md:grid-cols-3 gap-12 items-center">
-                    <div class="space-y-6"></div>
-                    <div class="flex justify-center">
-                        <div class="w-64 h-64 bg-gradient-organic rounded-full shadow-2xl animate-float"></div>
+                <h2 class="text-4xl font-bold text-center mb-16" data-i18n="iot.title"></h2>
+                
+                <div class="grid lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="p-6 border border-border bg-card rounded-2xl flex gap-4 hover:shadow-md transition-shadow">
+                            <div class="bg-blue-100 p-3 rounded-xl h-fit"><i data-lucide="droplets" class="text-blue-600"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg" data-i18n="iot.s1.title"></h4>
+                                <p class="text-sm text-muted-foreground mt-1" data-i18n="iot.s1.desc"></p>
+                            </div>
+                        </div>
+                        <div class="p-6 border border-border bg-card rounded-2xl flex gap-4 hover:shadow-md transition-shadow">
+                            <div class="bg-orange-100 p-3 rounded-xl h-fit"><i data-lucide="thermometer" class="text-orange-600"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg" data-i18n="iot.s2.title"></h4>
+                                <p class="text-sm text-muted-foreground mt-1" data-i18n="iot.s2.desc"></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="space-y-6"></div>
+                    
+                    <div class="hidden lg:flex justify-center relative">
+                        <div class="w-72 h-72 bg-gradient-organic rounded-full shadow-2xl animate-float flex items-center justify-center border-4 border-white/50">
+                             <i data-lucide="cpu" class="w-24 h-24 text-primary/60"></i>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="p-6 border border-border bg-card rounded-2xl flex gap-4 hover:shadow-md transition-shadow">
+                            <div class="bg-yellow-100 p-3 rounded-xl h-fit"><i data-lucide="sun" class="text-yellow-600"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg" data-i18n="iot.s3.title"></h4>
+                                <p class="text-sm text-muted-foreground mt-1" data-i18n="iot.s3.desc"></p>
+                            </div>
+                        </div>
+                        <div class="p-6 border border-border bg-card rounded-2xl flex gap-4 hover:shadow-md transition-shadow">
+                            <div class="bg-primary/20 p-3 rounded-xl h-fit"><i data-lucide="zap" class="text-primary"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg" data-i18n="iot.s4.title"></h4>
+                                <p class="text-sm text-muted-foreground mt-1" data-i18n="iot.s4.desc"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="ai" class="py-24 lg:py-32 relative">
+        <section id="ai" class="py-24 lg:py-32 relative bg-muted/10">
             <div class="max-w-7xl mx-auto px-6 text-center mb-16">
-                <h2 class="text-4xl font-bold" data-i18n="ai.title"></h2>
-                <p class="text-muted-foreground mt-4" data-i18n="ai.subtitle"></p>
+                <span class="bg-primary/10 px-4 py-1.5 rounded-full text-sm font-bold text-primary" data-i18n="ai.badge"></span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-6 mb-6" data-i18n="ai.title"></h2>
+                <p class="text-muted-foreground max-w-2xl mx-auto text-lg" data-i18n="ai.subtitle"></p>
             </div>
             
-            <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-                <div class="grid sm:grid-cols-2 gap-4">
-                    <div class="p-6 border rounded-2xl bg-card">
-                        <i data-lucide="message-square" class="w-8 h-8 text-primary mb-4"></i>
-                        <h4 class="font-bold" data-i18n="ai.card1"></h4>
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+                <div class="p-8 border border-border bg-background rounded-3xl text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="scan-eye" class="text-blue-600 w-8 h-8"></i>
                     </div>
+                    <h3 class="text-xl font-bold mb-4" data-i18n="ai.feature1.title"></h3>
+                    <p class="text-muted-foreground" data-i18n="ai.feature1.desc"></p>
                 </div>
+
+                <div class="p-8 border border-border bg-background rounded-3xl text-center hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/5 rounded-full blur-2xl"></div>
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 relative z-10">
+                        <i data-lucide="sparkles" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 relative z-10" data-i18n="ai.feature2.title"></h3>
+                    <p class="text-muted-foreground relative z-10" data-i18n="ai.feature2.desc"></p>
+                </div>
+
+                <div class="p-8 border border-border bg-background rounded-3xl text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="trending-up" class="text-emerald-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4" data-i18n="ai.feature3.title"></h3>
+                    <p class="text-muted-foreground" data-i18n="ai.feature3.desc"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-24 bg-muted/20 relative">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <span class="inline-flex items-center justify-center gap-2 bg-background border border-border px-4 py-1.5 rounded-full text-sm font-medium text-muted-foreground mb-6">
+                    <i data-lucide="calendar" class="w-4 h-4"></i> <span data-i18n="pricing.badge"></span>
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" data-i18n="pricing.title"></h2>
+                <p class="text-muted-foreground max-w-2xl mx-auto mb-16" data-i18n="pricing.subtitle"></p>
                 
-                <div class="bg-card p-6 rounded-2xl border shadow-lg" id="ai-chat-messages">
-                </div>
-            </div>
-        </section>
+                <div class="grid md:grid-cols-3 gap-8 items-start">
+                    <div class="p-8 border border-border rounded-3xl bg-background text-left relative hover:shadow-lg transition-shadow">
+                        <h3 class="text-2xl font-bold" data-i18n="pricing.basic.title"></h3>
+                        <p class="text-sm text-muted-foreground mt-2" data-i18n="pricing.basic.subtitle"></p>
+                        <div class="my-6">
+                            <span class="text-5xl font-extrabold">$2.99</span><span class="text-muted-foreground">/mes</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-500 shrink-0"></i> <span data-i18n="pricing.basic.f1"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-500 shrink-0"></i> <span data-i18n="pricing.basic.f2"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-500 shrink-0"></i> <span data-i18n="pricing.basic.f3"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-500 shrink-0"></i> <span data-i18n="pricing.basic.f4"></span></li>
+                        </ul>
+                        <button class="w-full py-3 rounded-xl bg-secondary/60 font-bold hover:bg-secondary transition-colors" data-i18n="pricing.basic.btn"></button>
+                    </div>
 
-        <section id="pricing" class="py-20 bg-secondary/30">
-            <div class="max-w-7xl mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold" data-i18n="pricing.title"></h2>
-                <div class="grid md:grid-cols-3 gap-8 mt-12">
-                    <div class="p-8 border rounded-3xl bg-background">
-                        <h3 class="text-xl font-bold" data-i18n="pricing.basic.title"></h3>
-                        <p class="text-4xl font-bold my-6">$2.99</p>
-                        <button class="w-full py-3 rounded-xl bg-primary text-white" data-i18n="pricing.basic.btn"></button>
+                    <div class="p-8 border-2 border-primary rounded-3xl bg-[#0f3b21] text-white text-left relative shadow-2xl md:scale-105 z-10">
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#ea580c] text-white px-4 py-1 rounded-full text-sm font-bold flex items-center gap-1">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i> <span data-i18n="pricing.premium.badge"></span>
+                        </div>
+                        <h3 class="text-2xl font-bold" data-i18n="pricing.premium.title"></h3>
+                        <p class="text-sm text-white/80 mt-2" data-i18n="pricing.premium.subtitle"></p>
+                        <div class="my-6">
+                            <span class="text-5xl font-extrabold">$10.99</span><span class="text-white/80">/mes</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-400 shrink-0"></i> <span data-i18n="pricing.premium.f1"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-400 shrink-0"></i> <span data-i18n="pricing.premium.f2"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-400 shrink-0"></i> <span data-i18n="pricing.premium.f3"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-400 shrink-0"></i> <span data-i18n="pricing.premium.f4"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-400 shrink-0"></i> <span data-i18n="pricing.premium.f5"></span></li>
+                        </ul>
+                        <button class="w-full py-3 rounded-xl bg-white text-[#0f3b21] font-bold hover:bg-white/90 transition-colors" data-i18n="pricing.premium.btn"></button>
+                    </div>
+
+                    <div class="p-8 border border-border rounded-3xl bg-background text-left relative hover:shadow-lg transition-shadow">
+                        <h3 class="text-2xl font-bold" data-i18n="pricing.pro.title"></h3>
+                        <p class="text-sm text-muted-foreground mt-2" data-i18n="pricing.pro.subtitle"></p>
+                        <div class="my-6">
+                            <span class="text-5xl font-extrabold">$16.99</span><span class="text-muted-foreground">/mes</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-500 shrink-0"></i> <span data-i18n="pricing.pro.f1"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-500 shrink-0"></i> <span data-i18n="pricing.pro.f2"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-500 shrink-0"></i> <span data-i18n="pricing.pro.f3"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-500 shrink-0"></i> <span data-i18n="pricing.pro.f4"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-500 shrink-0"></i> <span data-i18n="pricing.pro.f5"></span></li>
+                            <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-emerald-500 shrink-0"></i> <span data-i18n="pricing.pro.f6"></span></li>
+                        </ul>
+                        <button class="w-full py-3 rounded-xl bg-[#ea580c] text-white font-bold hover:bg-[#ea580c]/90 transition-colors" data-i18n="pricing.pro.btn"></button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="team" class="py-20">
+        <section id="team" class="py-24 bg-background">
             <div class="max-w-7xl mx-auto px-6 text-center">
-                <h2 class="text-4xl font-bold mb-16" data-i18n="team.title"></h2>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="p-6 border rounded-2xl bg-card">
-                        <div class="w-16 h-16 rounded-full bg-secondary mx-auto mb-4"></div>
-                        <h4 class="font-bold">Nombre</h4>
-                        <p class="text-sm text-primary" data-i18n="team.role1"></p>
+                <span class="inline-flex items-center justify-center gap-2 bg-secondary/50 px-4 py-1.5 rounded-full text-sm font-medium text-primary mb-6">
+                    <i data-lucide="users" class="w-4 h-4"></i> <span data-i18n="team.badge"></span>
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4" data-i18n="team.title"></h2>
+                <p class="text-muted-foreground max-w-2xl mx-auto mb-16" data-i18n="team.subtitle"></p>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                    <div class="p-6 border border-border rounded-3xl bg-card hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 rounded-2xl bg-slate-100 flex items-center justify-center text-xl font-bold mb-6">DR</div>
+                        <h4 class="font-bold text-lg leading-tight mb-1">Diego Rolin Acuña Tomas</h4>
+                        <p class="text-sm font-medium text-emerald-700 mb-4" data-i18n="team.m1.role"></p>
+                        <p class="text-xs text-muted-foreground mb-6" data-i18n="team.m1.desc"></p>
+                        <div class="flex items-center gap-3 text-muted-foreground">
+                            <a href="#" class="hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="github" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 border border-border rounded-3xl bg-card hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 rounded-2xl bg-stone-100 flex items-center justify-center text-xl font-bold mb-6">FS</div>
+                        <h4 class="font-bold text-lg leading-tight mb-1">Farid Sebastian Briceño De La...</h4>
+                        <p class="text-sm font-medium text-emerald-700 mb-4" data-i18n="team.m2.role"></p>
+                        <p class="text-xs text-muted-foreground mb-6" data-i18n="team.m2.desc"></p>
+                        <div class="flex items-center gap-3 text-muted-foreground">
+                            <a href="#" class="hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="github" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 border border-border rounded-3xl bg-card hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 rounded-2xl bg-cyan-50 flex items-center justify-center text-xl font-bold mb-6">CA</div>
+                        <h4 class="font-bold text-lg leading-tight mb-1">Carlos Andrés Coca Lavado</h4>
+                        <p class="text-sm font-medium text-emerald-700 mb-4" data-i18n="team.m3.role"></p>
+                        <p class="text-xs text-muted-foreground mb-6" data-i18n="team.m3.desc"></p>
+                        <div class="flex items-center gap-3 text-muted-foreground">
+                            <a href="#" class="hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="github" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 border border-border rounded-3xl bg-card hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 rounded-2xl bg-orange-50 flex items-center justify-center text-xl font-bold mb-6">EL</div>
+                        <h4 class="font-bold text-lg leading-tight mb-1">Erick Leonardo Palomino Fiestas</h4>
+                        <p class="text-sm font-medium text-emerald-700 mb-4" data-i18n="team.m4.role"></p>
+                        <p class="text-xs text-muted-foreground mb-6" data-i18n="team.m4.desc"></p>
+                        <div class="flex items-center gap-3 text-muted-foreground">
+                            <a href="#" class="hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="github" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 border border-border rounded-3xl bg-card hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 rounded-2xl bg-purple-50 flex items-center justify-center text-xl font-bold mb-6">RS</div>
+                        <h4 class="font-bold text-lg leading-tight mb-1">Renzo Sebastian Rivera Ratachi</h4>
+                        <p class="text-sm font-medium text-emerald-700 mb-4" data-i18n="team.m5.role"></p>
+                        <p class="text-xs text-muted-foreground mb-6" data-i18n="team.m5.desc"></p>
+                        <div class="flex items-center gap-3 text-muted-foreground">
+                            <a href="#" class="hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="github" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 border border-border rounded-3xl bg-card hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 rounded-2xl bg-rose-50 flex items-center justify-center text-xl font-bold mb-6">EM</div>
+                        <h4 class="font-bold text-lg leading-tight mb-1">Elvia Marcela Rodríguez Villa</h4>
+                        <p class="text-sm font-medium text-emerald-700 mb-4" data-i18n="team.m6.role"></p>
+                        <p class="text-xs text-muted-foreground mb-6" data-i18n="team.m6.desc"></p>
+                        <div class="flex items-center gap-3 text-muted-foreground">
+                            <a href="#" class="hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="github" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 border border-border rounded-3xl bg-card hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 rounded-2xl bg-teal-50 flex items-center justify-center text-xl font-bold mb-6">MA</div>
+                        <h4 class="font-bold text-lg leading-tight mb-1">Max Anthony Paitan Pumacahua</h4>
+                        <p class="text-sm font-medium text-emerald-700 mb-4" data-i18n="team.m7.role"></p>
+                        <p class="text-xs text-muted-foreground mb-6" data-i18n="team.m7.desc"></p>
+                        <div class="flex items-center gap-3 text-muted-foreground">
+                            <a href="#" class="hover:text-primary"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="github" class="w-4 h-4"></i></a>
+                            <a href="#" class="hover:text-primary"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,27 +409,38 @@
             <div class="max-w-4xl mx-auto px-6">
                 <h2 class="text-5xl font-bold mb-6" data-i18n="cta.title"></h2>
                 <p class="text-lg opacity-90 mb-10" data-i18n="cta.subtitle"></p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <div class="flex justify-center">
                     <button class="bg-white text-primary px-8 py-4 rounded-xl font-bold" data-i18n="cta.btn1"></button>
-                    <button class="bg-transparent border border-white/20 px-8 py-4 rounded-xl font-bold" data-i18n="cta.btn2"></button>
                 </div>
+            </div>
+        </section>
+
+        <section id="videos" class="py-24 bg-muted/10">
+            <div class="max-w-7xl mx-auto px-6 space-y-24">
+                
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Video about the team</h2>
+                    <div class="w-full max-w-4xl mx-auto aspect-video bg-background border border-border rounded-3xl shadow-lg flex items-center justify-center overflow-hidden">
+                        <span class="text-muted-foreground font-medium">[ Inserta tu video del equipo aquí ]</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">About the Product</h2>
+                    <!-- Contenedor del video -->
+                    <div class="w-full max-w-4xl mx-auto aspect-video bg-background border border-border rounded-3xl shadow-lg flex items-center justify-center overflow-hidden">
+                        <span class="text-muted-foreground font-medium">[ Inserta tu video del producto aquí ]</span>
+                    </div>
+                </div>
+
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-card border-t border-border py-16">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12">
-            <div>
-                <h4 class="font-bold mb-4" data-i18n="footer.product.title"></h4>
-                <ul class="space-y-2 text-sm text-muted-foreground">
-                    <li><a href="#" data-i18n="footer.product.link1"></a></li>
-                    <li><a href="#" data-i18n="footer.product.link2"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="text-center mt-12 text-sm text-muted-foreground">
-            <p data-i18n="footer.copyright"></p>
+    <footer class="bg-card border-t border-border py-8">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-center">
+            <p class="text-sm text-muted-foreground text-center" data-i18n="footer.copyright"></p>
         </div>
     </footer>
 

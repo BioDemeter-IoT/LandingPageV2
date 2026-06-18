@@ -47,33 +47,128 @@
     }
   },
   "iot": {
-    "title": "Tu ecosistema de monitoreo"
+    "title": "Tu ecosistema de monitoreo en tiempo real",
+    "s1": {
+      "title": "Humedad del suelo",
+      "desc": "Sensores capacitivos que miden con precisión el nivel de agua disponible para las raíces."
+    },
+    "s2": {
+      "title": "Temperatura",
+      "desc": "Monitoreo constante para detectar cambios bruscos que puedan afectar a tus plantas."
+    },
+    "s3": {
+      "title": "Luz (Lux)",
+      "desc": "Mide la intensidad lumínica y te avisa si necesitan más exposición solar."
+    },
+    "s4": {
+      "title": "Actuadores",
+      "desc": "Controla bombas de agua y lámparas artificiales de forma completamente remota."
+    }
   },
   "ai": {
-    "title": "Tu asistente botánico personal",
-    "subtitle": "Interactúa en tiempo real con nuestra IA. Aprende de los sensores de tu planta para obtener consejos precisos.",
-    "card1": "Chat inteligente",
-    "chatExample": {
-      "placeholder": "Ej: ¿Por qué mi monstera tiene hojas amarillas?"
+    "badge": "Inteligencia Botánica",
+    "title": "Un experto 24/7 para tus plantas",
+    "subtitle": "Nuestra IA analiza los datos de los sensores y el entorno para ofrecerte diagnósticos precisos y consejos proactivos antes de que tu planta lo necesite.",
+    "feature1": {
+      "title": "Diagnóstico Temprano",
+      "desc": "Detecta anomalías en la humedad o temperatura de forma inmediata, previniendo enfermedades comunes."
+    },
+    "feature2": {
+      "title": "Guía Personalizada",
+      "desc": "Recibe instrucciones de cuidado adaptadas específicamente a la especie de tu planta y a su etapa de crecimiento."
+    },
+    "feature3": {
+      "title": "Aprendizaje Continuo",
+      "desc": "El sistema evoluciona y se vuelve más inteligente con los datos históricos de tu propio invernadero."
     }
   },
   "pricing": {
-    "title": "Planes para cada jardinero",
+    "badge": "Elige tu plan",
+    "title": "Planes para cada <span class='text-[#ea580c]'>jardinero</span>",
+    "subtitle": "Desde principiantes hasta expertos, tenemos el plan perfecto para ti.",
     "basic": {
       "title": "Básico",
+      "subtitle": "Perfecto para empezar",
+      "f1": "Registro de hasta 5 plantas",
+      "f2": "Recordatorios de cuidado",
+      "f3": "Monitoreo manual asistido",
+      "f4": "Guías básicas de cuidado",
       "btn": "Comenzar"
+    },
+    "premium": {
+      "badge": "Más popular",
+      "title": "Premium",
+      "subtitle": "Para entusiastas",
+      "f1": "Todo lo del plan Básico",
+      "f2": "Plantas ilimitadas",
+      "f3": "Calendario visual de tareas",
+      "f4": "Historial completo de cuidados",
+      "f5": "Guías avanzadas",
+      "btn": "Elegir Premium"
+    },
+    "pro": {
+      "title": "Pro",
+      "subtitle": "Experiencia completa",
+      "f1": "Todo lo del plan Premium",
+      "f2": "Integración IoT completa",
+      "f3": "Asistente IA ilimitado",
+      "f4": "Identificación por foto",
+      "f5": "Recomendaciones por clima",
+      "f6": "Soporte prioritario",
+      "btn": "Ir a Pro"
     }
   },
   "faq": {
     "title": "Resolvemos tus dudas",
     "q1": {
       "question": "¿Necesito sensores IoT para usar PlantSync?",
-      "answer": "Sí, aunque puedes usar la app manualmente..."
+      "answer": "No es estrictamente necesario. Puedes usar la app manualmente para llevar un registro visual y recibir guías, aunque los sensores automatizan y mejoran la precisión del cuidado."
+    },
+    "q2": {
+      "question": "¿Qué tipos de plantas puedo registrar?",
+      "answer": "Nuestra base de datos incluye miles de especies, desde plantas de interior comunes como la Monstera o Pothos, hasta huertos urbanos y suculentas exóticas."
+    },
+    "q3": {
+      "question": "¿Cómo funciona la IA Botánica?",
+      "answer": "La IA analiza los datos ingresados (humedad, temperatura, especie) y los cruza con información botánica para generar alertas tempranas y recomendaciones personalizadas."
+    },
+    "q4": {
+      "question": "¿Es compatible con cualquier dispositivo móvil?",
+      "answer": "Sí, PlantSync funciona a la perfección desde navegadores de iOS, Android, tablets y computadoras de escritorio, adaptándose a tu pantalla."
     }
   },
   "team": {
-    "title": "Las mentes detrás de PlantSync",
-    "role1": "Rol"
+    "badge": "Conoce al equipo",
+    "title": "Las mentes detrás de <span class='text-primary'>PlantSync</span>",
+    "subtitle": "Un equipo apasionado por la tecnología y el cuidado del medio ambiente.",
+    "m1": {
+      "role": "Full Stack Developer",
+      "desc": "Frontend, Backend, Bases de datos, Open Source"
+    },
+    "m2": {
+      "role": "Product Developer",
+      "desc": "Frontend, Backend, Bases de datos, Productos digitales"
+    },
+    "m3": {
+      "role": "Web Developer",
+      "desc": "C++, Python, HTML, Desarrollo web"
+    },
+    "m4": {
+      "role": "Software Developer",
+      "desc": "C++, HTML, CSS, .NET, Python, JavaScript, SQL, MongoDB"
+    },
+    "m5": {
+      "role": "Frontend Developer",
+      "desc": "JavaScript, C++, Desarrollo de interfaces"
+    },
+    "m6": {
+      "role": "AI/ML Engineer",
+      "desc": "Python, AWS, Data Engineering, Chatbots, Speech Analytics"
+    },
+    "m7": {
+      "role": "Business Analyst",
+      "desc": "Análisis, Empatía, Gestión, Colaboración"
+    }
   },
   "cta": {
     "title": "Empieza a cuidar tus plantas <span class='text-secondary'>con inteligencia</span>",
