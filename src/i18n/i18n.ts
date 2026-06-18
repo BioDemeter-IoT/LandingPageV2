@@ -10,13 +10,22 @@ export function initI18n() {
     const langButtons = document.querySelectorAll('[data-lang-switch]');
     langButtons.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            const lang = (e.currentTarget as HTMLElement).getAttribute('data-lang-switch');
+            const target = e.currentTarget as HTMLElement;
+            const lang = target.getAttribute('data-lang-switch');
+            
             if (lang && translations[lang]) {
                 currentLang = lang;
+                
                 applyTranslations(lang);
                 
-                const currentLangLabel = document.getElementById('current-lang-label');
-                if (currentLangLabel) currentLangLabel.textContent = lang;
+                langButtons.forEach(b => {
+                    b.classList.remove('bg-secondary/50', 'font-bold');
+                    b.classList.add('hover:bg-secondary/50');
+                });
+                
+            
+                target.classList.add('bg-secondary/50', 'font-bold');
+                target.classList.remove('hover:bg-secondary/50'); 
             }
         });
     });
@@ -36,7 +45,7 @@ function applyTranslations(lang: string) {
             if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
                 (el as HTMLInputElement).placeholder = text;
             } else {
-                el.innerHTML = text;
+                el.innerHTML = text; 
             }
         }
     });
